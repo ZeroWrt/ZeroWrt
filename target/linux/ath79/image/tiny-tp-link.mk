@@ -9,6 +9,7 @@ define Device/tplink_re450-v1
   DEVICE_PACKAGES := kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct
   TPLINK_BOARD_ID := RE450
   SUPPORTED_DEVICES += re450
+  DEFAULT := n
 endef
 TARGET_DEVICES += tplink_re450-v1
 
@@ -21,6 +22,7 @@ define Device/tplink_re450-v2
   DEVICE_PACKAGES := kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct
   TPLINK_BOARD_ID := RE450-V2
   LOADER_TYPE := elf
+  DEFAULT := n
 endef
 TARGET_DEVICES += tplink_re450-v2
 
