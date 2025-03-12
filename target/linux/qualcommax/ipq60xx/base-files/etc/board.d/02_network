@@ -23,10 +23,8 @@ ipq60xx_setup_interfaces()
 	qihoo,360v6)
 		ucidef_set_interfaces_lan_wan "lan1 lan2 lan3" "wan"
 		;;
+	tplink,eap620hd-v2|\
 	tplink,eap610-outdoor)
-		ucidef_set_interface_lan "lan" "dhcp"
-		;;
-	tplink,eap620hd-v2)
 		ucidef_set_interface_lan "lan" "dhcp"
 		;;
 	linksys,mr7350|\
