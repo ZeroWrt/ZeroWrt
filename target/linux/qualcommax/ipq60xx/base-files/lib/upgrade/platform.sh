@@ -128,10 +128,8 @@ platform_do_upgrade() {
 	qihoo,360v6)
 		nand_do_upgrade "$1"
 		;;
+	tplink,eap620hd-v2|\
 	tplink,eap610-outdoor)
-		tplink_do_upgrade "$1"
-		;;
-	tplink,eap620hd-v2)
 		tplink_do_upgrade "$1"
 		;;
 	yuncore,fap650)

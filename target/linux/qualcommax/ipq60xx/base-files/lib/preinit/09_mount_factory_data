@@ -7,13 +7,8 @@ preinit_mount_factory_data() {
 	. /lib/functions/system.sh
 
 	case $(board_name) in
+	tplink,eap620hd-v2|\
 	tplink,eap610-outdoor)
-		mtd_path=$(find_mtd_chardev "factory_data")
-		ubiattach --dev-path="$mtd_path" --devn=1
-		mkdir /tmp/factory_data
-		mount -o ro,noatime -t ubifs ubi1:ubi_factory_data /tmp/factory_data
-		;;
-	tplink,eap620hd-v2)
 		mtd_path=$(find_mtd_chardev "factory_data")
 		ubiattach --dev-path="$mtd_path" --devn=1
 		mkdir /tmp/factory_data

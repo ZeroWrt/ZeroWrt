@@ -90,7 +90,8 @@ define Device/tplink_eap620hd-v2
         $(call Device/FitImage)
         $(call Device/UbiFit)
         DEVICE_VENDOR := TP-Link
-        DEVICE_MODEL := EAP620HD-V2
+        DEVICE_MODEL := EAP620HD
+	DEVICE_VARIANT := V2
         BLOCKSIZE := 128k
         PAGESIZE := 2048
         SOC := ipq6018

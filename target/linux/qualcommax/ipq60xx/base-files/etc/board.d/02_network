@@ -57,11 +57,8 @@ ipq60xx_setup_macs()
 		wan_mac=$(macaddr_add "$lan_mac" 1)
 		label_mac=$lan_mac
 		;;
+	tplink,eap620hd-v2|\
 	tplink,eap610-outdoor)
-		label_mac=$(get_mac_binary /tmp/factory_data/default-mac 0)
-		lan_mac=$label_mac
-		;;
-	tplink,eap620hd-v2)
 		label_mac=$(get_mac_binary /tmp/factory_data/default-mac 0)
 		lan_mac=$label_mac
 		;;
