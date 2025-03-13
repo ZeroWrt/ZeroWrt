@@ -11,10 +11,11 @@ PKG_NAME:=ivpu-firmware
 PKG_VERSION:=1.13.0
 PKG_RELEASE:=1
 
-PKG_SOURCE_PROTO:=git
-PKG_SOURCE_URL:=https://github.com/intel/linux-npu-driver.git
-PKG_SOURCE_VERSION:=v$(PKG_VERSION)
-PKG_MIRROR_HASH:=45adbbb8a6977953af9abcd9a05c4719aa2ee0440659c9a66fbc0050dd4eb685
+PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL_FILE:=v$(PKG_VERSION).tar.gz
+PKG_SOURCE_URL:=https://github.com/intel/linux-npu-driver/archive/refs/tags
+PKG_HASH:=6023abdc8e73314d4a3bf9d391d274437f7abe10c4de1a4842a6ed3a1ad925c0
+PKG_BUILD_DIR:=$(BUILD_DIR)/linux-npu-driver-$(PKG_VERSION)
 
 include $(INCLUDE_DIR)/package.mk
 
