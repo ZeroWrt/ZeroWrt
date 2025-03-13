@@ -537,15 +537,6 @@ define Device/tplink_re350k-v1
 endef
 TARGET_DEVICES += tplink_re350k-v1
 
-define Device/tplink_re355-v1
-  $(Device/tplink_rex5x-v1)
-  DEVICE_MODEL := RE355
-  DEVICE_VARIANT := v1
-  TPLINK_BOARD_ID := RE355
-  SUPPORTED_DEVICES += re355
-endef
-TARGET_DEVICES += tplink_re355-v1
-
 define Device/tplink_re450-v3
   $(Device/tplink-safeloader)
   SOC := qca9563

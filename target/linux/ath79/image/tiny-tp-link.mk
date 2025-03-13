@@ -1,5 +1,18 @@
 include ./common-tp-link.mk
 
+define Device/tplink_re355-v1
+  $(Device/tplink-safeloader)
+  SOC := qca9558
+  IMAGE_SIZE := 6016k
+  DEVICE_MODEL := RE355
+  DEVICE_VARIANT := v1
+  DEVICE_PACKAGES := kmod-ath10k-ct-smallbuffers ath10k-firmware-qca988x-ct
+  TPLINK_BOARD_ID := RE355
+  SUPPORTED_DEVICES += re355
+  DEFAULT := n
+endef
+TARGET_DEVICES += tplink_re355-v1
+
 define Device/tplink_re450-v1
   $(Device/tplink-safeloader)
   SOC := qca9558
