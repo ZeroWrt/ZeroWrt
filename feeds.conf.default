@@ -3,4 +3,4 @@ src-git luci https://github.com/ZeroWrt/luci.git
 src-git routing https://git.openwrt.org/feed/routing.git
 src-git telephony https://git.openwrt.org/feed/telephony.git
 src-git video https://github.com/openwrt/video.git
-
+src-git openwrt_package https://github.com/ZeroWrt/openwrt-package
